@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.backgroundLight {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8FF;
+}
+
+.backgroundDark {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #141D2F;
+}
+
+.darkMode {
+  cursor: pointer;
+}
+
+.header {
+  margin-bottom: 35px;
+  height: 38px;
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark {
+  margin-right: 16px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 2.5px;
+  color: #697C9A;
+}
+
+.light {
+  margin-right: 16px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 2.5px;
+  color: #FFFFFF;
+}
+
+
+.devfinderLight {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  color: #222731;
+}
+
+.devfinderDark {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  color: #FFF;
+}
+
+.searchIcon {
+  margin-top: 24px;
+  margin-left: 32px;
+  position: absolute;
+  z-index: 1;
+  height: 24px;
+  width: 24.05787467956543px;
+}
+
+.searchFieldLight {
+  margin-left: -8px;
+  margin-bottom: 24px;
+  padding-right: 116px;
+  padding-left: 80px;
+  height: 69px;
+  width: 730px;
+  border-radius: 15px;
+  background: #FEFEFE;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+  border: none;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4B6A9B;
+}
+
+.searchFieldDark {
+  margin-left: -8px;
+  margin-bottom: 24px;
+  padding-right: 116px;
+  padding-left: 80px;
+  height: 69px;
+  width: 730px;
+  border-radius: 15px;
+  background: #1E2A47;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+  border: none;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.searchButton {
+  margin-left: -116px;
+  height: 50px;
+  width: 106px;
+  border-radius: 10px;
+  background: #0079FF;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.notFound {
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 498px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #F74646;  
+}
+
+.cardLight {
+  padding: 48px;
+  height: 419px;
+  width: 730px;
+  border-radius: 15px;
+  background: #FEFEFE;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.cardDark {
+  padding: 48px;
+  height: 419px;
+  width: 730px;
+  border-radius: 15px;
+  background: #1E2A47;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.nameAndDateLight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #2B3442;
+}
+
+.nameAndDateDark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameAndDateDark h1 {
+  color: #FFF;
+}
+
+.nameAndDateLight p {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  color: #697C9A;
+}
+
+.nameAndDateDark p {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.avatar {
+  margin-right: 37px;
+  height: 117px;
+  width: 117px;
+  border-radius: 100%;
+}
+
+.name {
+  margin-right: 38px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  color: #2B3442;
+}
+
+.tagname {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0079FF;
+}
+
+.bioLight {
+  margin-bottom: 32px;
+  margin-top: 20px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #4B6A9B;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.bioDark {
+  margin-bottom: 32px;
+  margin-top: 20px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.miniCardLight {
+  height: 85px;
+  width: 480px;
+  border-radius: 10px;
+  background: #F6F8FF;
+  display: flex;
+  justify-content: space-around;
+}
+
+.miniCardDark {
+  height: 85px;
+  width: 480px;
+  border-radius: 10px;
+  background: #141D2F;
+  display: flex;
+  justify-content: space-around;
+}
+
+.miniCardTextLight {
+  margin-top: 15px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4B6A9B;
+}
+
+.miniCardTextDark {
+  margin-top: 15px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #FFF;
+}
+
+.numbersLight {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #2B3442;
+}
+
+.numbersDark {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+
+.additionalInfoLight {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #4B6A9B;
+}
+
+.additionalInfoDark {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFF;
+}
+
+.withoutAdditionalInfoLight {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #A4B4CC;
+}
+
+.withoutAdditionalInfoDark {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFF;
+}
+
+.aditionalInfoSection {
+  margin-top: 37px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 19px;
+}
+
+.location {
+  margin-right: 25px;
+  height: 20px;
+  width: 13.75252914428711px;
+}
+
+.twitter {
+  margin-right: 19px;
+  height: 16.249984741210938px;
+  width: 19.999980926513672px;
+}
+
+.link {
+  margin-right: 19px;
+  height: 19.944936752319336px;
+  width: 19.990970611572266px;
+}
+
+.company {
+  margin-right: 19px;
+  height: 19.851648330688477px;
+  width: 19.999980926513672px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-bottom: 36px;
+    height: 38px;
+    width: 327px;
+  }
+
+  .searchFieldLight {
+    padding-right: 84px;
+    padding-left: 45px;
+    height: 60px;
+    width: 327px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .searchFieldDark {
+    padding-right: 84px;
+    padding-left: 45px;
+    height: 60px;
+    width: 327px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .searchButton {
+    margin-left: -92px;
+    height: 46px;
+    width: 84px;
+  }
+
+  .searchIcon {
+    margin-top: 18px;
+    margin-left: 0px;
+    position: absolute;
+    z-index: 1;
+    height: 24px;
+    width: 24.05787467956543px;
+  }
+
+  .cardLight {
+    padding: 24px;
+    height: 517px;
+    width: 327px;   
+  }
+
+  .cardDark {
+    padding: 24px;
+    height: 517px;
+    width: 327px;   
+  }
+
+  .nameAndDateLight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .nameAndDateDark {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .nameAndDateLight p {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .nameAndDateDark p {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+
+  .avatar {
+    margin-bottom: 39px;
+    margin-right: 19px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .name {
+    margin-right: 0px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tagname {
+    margin-top: -40px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .bioLight {
+    margin-bottom: 23px;
+    margin-top: 63px;
+    margin-left: -89px;
+    height: 75px;
+    width: 279px;
+  }
+
+  .bioDark {
+    margin-bottom: 23px;
+    margin-top: 63px;
+    margin-left: -89px;
+    height: 75px;
+    width: 279px;
+  }
+
+  .miniCardLight {
+    margin-left: -89px;
+    height: 85px;
+    width: 279px; 
+  }
+
+  .miniCardDark {
+    margin-left: -89px;
+    height: 85px;
+    width: 279px; 
+  }
+
+  .aditionalInfoSection {
+    margin-left: -89px;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+  }
+
+}
